@@ -43,3 +43,8 @@ body {
     font-size: 150%;
 }
 
+.right_column {
+	float: right;
+	width: 216px;
+	padding-right: 15px;
+}
