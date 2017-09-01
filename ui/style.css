@@ -15,7 +15,7 @@ body {
 .vertical-line {
     display: block;
     width:5px;
-    background-color:#000;
+    background-color:rgba(0,255,0,0.3);
     position:absolute;
     top:0;
     bottom:0;
