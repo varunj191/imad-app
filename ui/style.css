@@ -48,3 +48,9 @@ body {
 	padding-right: 350px;
 	font-size: 150%;
 }
+
+.login_textbox {
+    float:right;
+    padding-right : 350px;
+    height: 40px;;
+}
