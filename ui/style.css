@@ -14,7 +14,7 @@ body {
 
 .align-right {
     text-align: right;
-    border-right-width: 50px;
+    padding-right: 30px;
 }
 .text-big {
     font-size: 300%;
