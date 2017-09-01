@@ -44,9 +44,9 @@ body {
 }
 
 .right_column {
-	float: right;
-	padding-right: 350px;
-	font-size: 150%;
+    float: right;
+    padding-right: 35px;
+    font-size: 250%;
 }
 
 .login_textbox {
