@@ -24,6 +24,9 @@ app.get('/article-three', function (req, res) {
 app.get('/mainpage', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'mainpage.html'));
 });
+app.get('/forgetpassword', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'forgetpassword.html'));
+});
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
