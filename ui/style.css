@@ -14,8 +14,7 @@ body {
 
 .align-right {
     text-align: right;
-    border-spacing: 100px 50px;
-    border-right-width: 5px;
+    border-right-width: 50px;
 }
 .text-big {
     font-size: 300%;
