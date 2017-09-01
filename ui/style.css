@@ -4,10 +4,17 @@ body {
     margin-top: 75px;
 }
 
-.center {
+.align-center {
     text-align: center;
 }
 
+.align-left {
+    text-align : left;
+}
+
+.align-right {
+    text-align: right;
+}
 .text-big {
     font-size: 300%;
 }
