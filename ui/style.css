@@ -52,5 +52,6 @@ body {
 .login_textbox {
     float:right;
     padding-right : 150px;
+    top : 80px;
 }
 
