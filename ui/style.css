@@ -46,4 +46,5 @@ body {
 .right_column {
 	float: right;
 	padding-right: 450px;
+	font-size: 200%;
 }
