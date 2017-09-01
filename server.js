@@ -4,39 +4,7 @@ var path = require('path');
 
 var app = express();
 
-var articleone = `<html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-        <title>
-        Article one header yoo
-        </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <style>
-        .container{
-            max-width: 800px;
-            margin:0 outo;
-            color: grey
-            font-family: sans-serif;
-        }
-    </style>
-    </head>
-      <body>
-       <div class = "center">
-               <div>
-              <a href ="/">Home</a>
-              </div>
-              <hr/>
-              <h2>
-                         Hello my first article its
-             </h2>
-  
-            <div>
-               <p> Hello wow</p>
-
-              </div>
-        </div>
-    </body>
-</html>
+var articleone = `
 `
 app.use(morgan('combined'));
 
