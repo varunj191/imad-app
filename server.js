@@ -14,9 +14,8 @@ var articles = {
     links:   `<a href="/">Home</a>
              <a href="/mainpage">Mainpage</a>
              <a href="/article-two">Article two</a>
-             <a href="/article-three">Article Three</a>
-             <script type="text/javascript" src="/ui/main.js">`,
-   buttonclick: `<div>The button <button id="counter"> click me </button>has been clicked<span id="count"> 0 </span> times. </div>`
+             <a href="/article-three">Article Three</a>`,
+     buttonclick: `<div>The button <button id="counter"> click me </button>has been clicked<span id="count"> 0 </span> times. </div>`
  },
  "article-two": {
     title : "Article: two - Farmet in SouthIndia",
@@ -57,8 +56,7 @@ function createTemplate (data)  {
        </title>
     </head?
     <body>
-     
-       <br>
+    <br>
        ${links}
        <div>
        ${heading}
