@@ -54,10 +54,10 @@ function createTemplate (data)  {
        </title>
     </head?
     <body>
-       ${heading}
-       ${date}
-       ${content}
        ${links}
+       ${heading}
+       ${content}
+      ${date}
      </body>
     </html>
     `;
