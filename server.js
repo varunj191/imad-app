@@ -14,7 +14,8 @@ var articles = {
     links:   `<a href="/">Home</a>
              <a href="/mainpage">Mainpage</a>
              <a href="/article-two">Article two</a>
-             <a href="/article-three">Article Three</a>`,
+             <a href="/article-three">Article Three</a>
+             <script type="text/javascript" src="/ui/main.js">`,
    buttonclick: `<div>The button <button id="counter"> click me </button>has been clicked<span id="count"> 0 </span> times. </div>`
  },
  "article-two": {
@@ -71,7 +72,6 @@ function createTemplate (data)  {
        <div>
        ${buttonclick}
        </div>
-     <script type="text/javascript" src="/ui/main.js">
      </body>
     </html>
     `;
