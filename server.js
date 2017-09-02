@@ -61,7 +61,7 @@ function createTemplate (data)  {
      </body>
     </html>
     `;
-    return htmltempalte;
+    return htmltemplate;
 }
 
 
