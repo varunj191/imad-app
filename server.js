@@ -3,7 +3,7 @@ var morgan = require('morgan');
 var path = require('path');
 
 var app = express();
-
+//Multiple articles
 var articles = {
  "article-one": {
     title : "Article: One - Farmer in india",
@@ -39,7 +39,7 @@ var articles = {
              <a href="/article-two">Article two</a>`
    }
 };
-
+//Template and function
 function createTemplate (data)  {
     var title = data.title;
     var date = data.date;
