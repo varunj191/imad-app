@@ -14,9 +14,7 @@ var articles = {
     links:   `<a href="/">Home</a>
              <a href="/mainpage">Mainpage</a>
              <a href="/article-two">Article two</a>
-             <a href="/article-three">Article Three</a>`,
-     buttonclick: `<div>The button <button id="counter"> click me </button>has been clicked<span id="count"> 0 </span> times. </div>`,
-     scriptsource: `<script type="text/javascript" src="/ui/main.js"></script>`
+             <a href="/article-three">Article Three</a>`
  },
  "article-two": {
     title : "Article: two - Farmet in SouthIndia",
@@ -68,9 +66,6 @@ function createTemplate (data)  {
        <div>
        ${date}
        </div>
-       <div>
-       ${buttonclick}
-       </div>
      </body>
     </html>
     `;
@@ -79,10 +74,6 @@ function createTemplate (data)  {
 
 
 app.use(morgan('combined'));
-
-app.get('ui/main.js', function(req, res){
-   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
-});
 
 
 app.get('/', function (req, res) {
@@ -98,6 +89,9 @@ app.get('/mainpage', function (req, res) {
  res.sendFile(path.join(__dirname, 'ui', 'mainpage.html'));
 });
 
+app.get('ui/main.js', function(req, res){
+   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
 
 app.get('/forgetpassword', function (req, res) {
 res.sendFile(path.join(__dirname, 'ui', 'forgetpassword.html'));
