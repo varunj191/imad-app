@@ -15,7 +15,7 @@ var articles = {
              <a href="/mainpage">Mainpage</a>
              <a href="/article-two">Article two</a>
              <a href="/article-three">Article Three</a>`,
-   buttonclick: `<div>The button<button id="counter"> click me </button>has been clicked<span id="count"> 0 </span> times. </div>`
+   buttonclick: `<div>The button <button id="counter"> click me </button>has been clicked<span id="count"> 0 </span> times. </div>`
  },
  "article-two": {
     title : "Article: two - Farmet in SouthIndia",
