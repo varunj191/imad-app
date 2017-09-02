@@ -71,11 +71,6 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/:articleName', function (req, res) {
-  var articleName = req.params.articleName;
-  res.send(createTemplate(articles[articleName]));
-});
-
 app.get('/mainpage', function (req, res) {
  res.sendFile(path.join(__dirname, 'ui', 'mainpage.html'));
 });
@@ -88,6 +83,13 @@ res.sendFile(path.join(__dirname, 'ui', 'style.css'));
   app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
+
+app.get('/:articleName', function (req, res) {
+  var articleName = req.params.articleName;
+  res.send(createTemplate(articles[articleName]));
+});
+
+
 
 
 // Do not change port, otherwise your app won't run on IMAD servers
