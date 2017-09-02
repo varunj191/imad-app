@@ -56,6 +56,7 @@ function createTemplate (data)  {
        </title>
     </head?
     <body>
+      <script type="text/javascript" src="/ui/main.js">
        <br>
        ${links}
        <div>
