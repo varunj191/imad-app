@@ -54,6 +54,7 @@ function createTemplate (data)  {
        </title>
     </head?
     <body>
+       <br>
        ${links}
        <div>
        ${heading}
