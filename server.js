@@ -19,7 +19,7 @@ var articles = {
  "article-two": {
     title : "Article: two - Farmet in SouthIndia",
     heading: "Article-two",
-    date: "September 1, 2016",
+    date: "September 2, 2016",
     content:   ` <p>hi this is article two></p>
                 <p>ajfjalkfjlksj</p>`,
     links:   `<a href="/">Home</a>
@@ -30,7 +30,7 @@ var articles = {
  "article-three": {
     title : "Article: three - Farmet in Tamilnadu",
     heading: "Article-three",
-    date: "September 1, 2016",
+    date: "September 3, 2016",
     content:   ` <p>hi this is article three></p>
                 <p>ajfjalkfjlksj</p>`,
     links:   `<a href="/">Home</a>
@@ -57,7 +57,7 @@ function createTemplate (data)  {
        ${links}
        ${heading}
        ${content}
-      ${date}
+       ${date}
      </body>
     </html>
     `;
