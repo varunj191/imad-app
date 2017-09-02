@@ -9,7 +9,7 @@ var articles = {
     title : "Article: One - Farmer in india",
     heading: "Article-one",
     date: "September 1, 2016",
-    content:   ` <p>hi this is article one></p>
+    content:   ` <p>hi this is article one</p>
                 <p>ajfjalkfjlksj</p>`,
     links:   `<a href="/">Home</a>
              <a href="/mainpage">Mainpage</a>
@@ -20,7 +20,7 @@ var articles = {
     title : "Article: two - Farmet in SouthIndia",
     heading: "Article-two",
     date: "September 2, 2016",
-    content:   ` <p>hi this is article two></p>
+    content:   ` <p>hi this is article two</p>
                 <p>ajfjalkfjlksj</p>`,
     links:   `<a href="/">Home</a>
              <a href="/mainpage">Mainpage</a>
@@ -31,7 +31,7 @@ var articles = {
     title : "Article: three - Farmet in Tamilnadu",
     heading: "Article-three",
     date: "September 3, 2016",
-    content:   ` <p>hi this is article three></p>
+    content:   ` <p>hi this is article three</p>
                 <p>ajfjalkfjlksj</p>`,
     links:   `<a href="/">Home</a>
              <a href="/mainpage">Mainpage</a>
@@ -55,9 +55,15 @@ function createTemplate (data)  {
     </head?
     <body>
        ${links}
+       <div>
        ${heading}
+       </div> 
+       <div>
        ${content}
+       </div>
+       <div>
        ${date}
+       </div>
      </body>
     </html>
     `;
