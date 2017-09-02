@@ -46,7 +46,6 @@ function createTemplate (data)  {
     var heading = data.heading;
     var content = data.content;
     var links = data.links;
-    var buttonclick = data.buttonclick;
     var htmltemplate = `
     <html>
     <head>
@@ -75,12 +74,13 @@ function createTemplate (data)  {
 
 app.use(morgan('combined'));
 
-app.get('ui/main.js', function(req, res){
-   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
-});
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+app.get('ui/main.js', function(req, res){
+   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
 
