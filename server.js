@@ -95,7 +95,7 @@ app.get('/forgetpassword', function (req, res) {
 res.sendFile(path.join(__dirname, 'ui', 'forgetpassword.html'));
 });
 
-app.get('ui/main.js', function(req, res){
+app.get('/ui/main.js', function(req, res){
    res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
