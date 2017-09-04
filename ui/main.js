@@ -12,8 +12,9 @@ var request = new XMLHttpRequest();
                 span.innerHTML = counter.toString();
             }
         }
-    } 
+    }; 
     request.open('GET','http://varunj2506.imad.hasura-app.io/counter', true);
+    counter = counter + 1;
     request.send(null);
  //button.onclick = function () {
  //   counter = counter + 1 ;
