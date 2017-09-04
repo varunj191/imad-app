@@ -20,4 +20,11 @@ var request = new XMLHttpRequest();
  //   counter = counter + 1 ;
  //   var span = document.getElementById('count');
  //   span.innerHTML = counter.toString();
-};
+}; 
+//
+var Input = document.getElementById('inputbox')
+var inputbox = Input.value;
+var sumbit = document.getElementById('Submit1')
+Submit1.onclick = function () {
+    
+}
