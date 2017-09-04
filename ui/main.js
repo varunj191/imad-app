@@ -13,7 +13,7 @@ var request = new XMLHttpRequest();
             }
         }
     } 
-    request.send('GET','http://varunj2506.imad.hasura-app.io/counter', true);
+    request.open('GET','http://varunj2506.imad.hasura-app.io/counter', true);
     request.send(null);
  //button.onclick = function () {
  //   counter = counter + 1 ;
