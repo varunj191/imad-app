@@ -13,7 +13,8 @@ var request = new XMLHttpRequest();
             }
         }
     }; 
-    request.open('GET','http://varunj2506.imad.hasura-app.io/counter', true);
+    //request.open('GET','http://varunj2506.imad.hasura-app.io/counter', true);
+    request.open('GET', 'http://localhost:8080/counter', true);
     counter = counter + 1;
     request.send(null);
  //button.onclick = function () {
@@ -26,8 +27,8 @@ var Input = document.getElementById('inputbox')
 var inputbox = Input.value;
 var submit = document.getElementById('Submit1')
 submit.onclick = function () {
-    var names = ['name1','name2','name3'];
-    var list = '';
+    var names = ['name1','name2','name3', 'name4'];
+    var list = ' ';
     for(i=0; i < names.length ; i++) {
         list += '<li>' + name[i] + '</li>'
     }
