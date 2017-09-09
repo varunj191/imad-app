@@ -1,9 +1,13 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-
+var pg = require("pg");
 var app = express();
 //Multiple articles
+//var sql = require("mssql");
+
+
+
 var articles = {
  "article-one": {
      title: `Article: One - Farmer in india`,
@@ -108,6 +112,39 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/test-db', function (req, res) {
+
+    var sql = require("mssql");
+
+    // config for your database
+    var config = {
+        server: "localhost",
+        database: "master",
+        user: "STUSR10",
+        password: "india@1234",
+        port: 1433
+    };
+
+
+    // connect to your database
+    sql.connect(config, function (err) {
+
+        if (err) { console.log(err); }
+
+        // create Request object
+        var request = new sql.Request();
+
+        // query to the database and get the records
+        request.query('select * from master..employee', function (err, recordset) {
+
+            if (err) console.log(err)
+
+            // send records as a response
+            res.send(recordset);
+
+        });
+    });
+});
 
 
 var  counter = 0 ;
@@ -141,9 +178,6 @@ res.sendFile(path.join(__dirname, 'ui', 'style.css'));
   app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-
-
-
 
 
 var names = [];
